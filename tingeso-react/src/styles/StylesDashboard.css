@@ -1,0 +1,126 @@
+body
+{
+    background-color: rgb(245, 245, 245)
+}
+
+.menu
+{
+    /* navbar que se posiciona a la izquierda */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: black;
+    display: flex;
+    transition: 0.5s;
+    flex-direction: column;
+    z-index: 1000;
+    color: white;
+
+}
+
+a
+{
+    cursor: pointer;
+}
+
+
+.containerNav
+{
+    display: flex;
+    flex-direction: column;
+}
+
+ul
+{
+    width: 100%;
+    padding: 0;
+    /* padding-top: 20px; */
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+li
+{
+    padding-left: 35px;
+    transition: 0.3s;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.containerMenus
+{
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    justify-content: center;
+}
+
+.containerMenus h2
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    margin: 0;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.backblur
+{
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente */
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+li:hover
+{
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+li:active
+{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+img
+{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+    /* filtro negativo */
+    filter: invert(1);
+    margin-bottom: 4px;
+}
+
+main
+{
+    width: 100% - 270px;
+    height: 100vh - 3vh;
+    margin-left: 290px;
+    margin-top: 3vh;
+}
+
+main h1
+{
+    font-size: 30px;
+    margin: 0;
+}   
+
+main p
+{
+    font-size: 18px;
+    margin: 0;
+    margin-top: 6px;
+    font-weight: 300;
+}
